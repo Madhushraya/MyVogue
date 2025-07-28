@@ -28,6 +28,7 @@ MyVogue is a smart personal closet management application that helps users organ
 ```bash
 git clone https://github.com/yourusername/myvogue.git
 cd myvogue
+```
 
 ## Frontend Setup
 

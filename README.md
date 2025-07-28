@@ -59,7 +59,7 @@ DB_URL=mongodb+srv://<username>:<password>@cluster.mongodb.net/myvogue
 CLOUDINARY_API_KEY=your_key
 
 ## Folder Structure
-
+```
 myvogue/
 ├── frontend/        # React frontend
 ├── backend/         # Node.js or FastAPI backend
@@ -68,7 +68,7 @@ myvogue/
 ├── screenshots/     # App screenshots (optional)
 ├── README.md
 AI Recommendation Engine
-
+```
 ## The AI engine analyzes:
 
 Frequency of clothing use (to avoid overuse or underuse)
@@ -95,7 +95,7 @@ Make your changes and commit: git commit -m "Added your feature"
 Push to your branch: git push origin feature/your-feature
 Submit a pull request
 
-##License
+## License
 
 This project is licensed under the MIT License.
 

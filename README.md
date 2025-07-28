@@ -1,50 +1,116 @@
-# Welcome to your Expo app 👋
+# MyVogue – AI-Powered Personal Closet and Style Assistant
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MyVogue is a smart personal closet management application that helps users organize their wardrobe, track outfit history, and receive AI-powered outfit suggestions. Designed with a refined pastel-pink aesthetic inspired by high fashion, MyVogue is your intelligent styling assistant for every occasion.
 
-## Get started
+## Features
 
-1. Install dependencies
+- AI-powered outfit recommendations based on wear history, color matching, and category compatibility
+- Clothing photo upload and categorization into customizable sections such as tops, bottoms, dresses, and accessories
+- Wear history tracking to avoid outfit repetition and maintain wardrobe freshness
+- Filter and search functionality by category, last worn date, color, and custom tags
+- Minimalist and elegant user interface inspired by luxury fashion
 
-   ```bash
-   npm install
-   ```
+## Technology Stack
 
-2. Start the app
+| Layer       | Technology                        |
+|-------------|-----------------------------------|
+| Frontend    | React.js, Tailwind CSS            |
+| Backend     | Node.js or FastAPI                |
+| Database    | MongoDB, Firebase, or Supabase    |
+| AI Engine   | Outfit recommendation based on usage data and item metadata |
+| Image Storage | Firebase Storage or Cloudinary  |
+| Hosting     | Vercel or Netlify (frontend), Render or Railway (backend) |
 
-   ```bash
-    npx expo start
-   ```
+## Getting Started
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### Clone the Repository
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/yourusername/myvogue.git
+cd myvogue
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Frontend Setup
 
-## Learn more
+cd frontend
+npm install
+npm run dev
 
-To learn more about developing your project with Expo, look at the following resources:
+## Backend Setup (Node.js or FastAPI)
+Node.js:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+cd backend
+npm install
+npm run start
+FastAPI:
 
-## Join the community
+cd backend
+uvicorn main:app --reload
 
-Join our community of developers creating universal apps.
+## Environment Variables
+Create a .env file for frontend and backend.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Frontend:
+
+VITE_API_URL=http://localhost:5000
+Backend (Node.js):
+
+DB_URL=mongodb+srv://<username>:<password>@cluster.mongodb.net/myvogue
+CLOUDINARY_API_KEY=your_key
+
+## Folder Structure
+
+myvogue/
+├── frontend/        # React frontend
+├── backend/         # Node.js or FastAPI backend
+├── database/        # Schema and seed files
+├── public/          # Static assets
+├── screenshots/     # App screenshots (optional)
+├── README.md
+AI Recommendation Engine
+
+## The AI engine analyzes:
+
+Frequency of clothing use (to avoid overuse or underuse)
+Color combinations and match probabilities
+Compatibility across categories (e.g., tops and bottoms)
+Weather data and context-aware filtering (optional feature)
+This can be implemented using metadata-based filtering or embedding-based similarity scoring.
+
+## Future Enhancements
+
+User profiles and personalized styling preferences
+Travel-based capsule wardrobe planning
+Weather-based outfit suggestions
+Usage analytics and style tracking
+Integration with fashion boards or inspiration sources
+
+## Contributing
+
+Contributions are welcome.
+
+Fork the repository
+Create a new branch: git checkout -b feature/your-feature
+Make your changes and commit: git commit -m "Added your feature"
+Push to your branch: git push origin feature/your-feature
+Submit a pull request
+
+##License
+
+This project is licensed under the MIT License.
+
+Contact
+
+Developed by Madhu Shraya
+Email: madhushraya@gmail.com
+
+
+---
+
+Let me know if you want:
+
+- A matching `LICENSE` file (MIT, Apache, etc.)
+- Firebase or Supabase integration guide
+- Project logo or UI mockups
+- A version for a public pitch or portfolio site
+
+Ready to go live on GitHub whenever you are.
